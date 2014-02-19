@@ -1,0 +1,38 @@
+// Colors
+$background:    #2e3339;
+$white:					#ffffff;
+$dark-grey:			#384047;
+$light-grey:		#8d9aa5;
+$green:					#5fcf80;
+$green-dark:		#3ac162;
+$muted:					#83868a;
+$muted-dark:		#606366;
+
+// Fonts
+$sans-serif: "helvetica", arial, sans-serif;
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Mixins
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+  	 -moz-border-radius: $radius;
+  		-ms-border-radius: $radius;
+  				border-radius: $radius;
+}
+
+@mixin transition($transition) {
+	-webkit-transition: all $transition;
+   	 -moz-transition: all $transition;
+        	transition: all $transition;
+}
+
+// Convert px to ems
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em
+}

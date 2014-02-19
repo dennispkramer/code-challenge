@@ -1,0 +1,13 @@
+body{
+	font-family: $sans-serif;
+}
+h1{
+	font-size: em(34);
+	color: $dark-grey;
+	font-weight: $bold;
+	margin-bottom: 10px;
+}
+h2{
+	font-size: em(18);
+	line-height: em(22);
+	color: $light-grey;}

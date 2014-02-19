@@ -1,0 +1,29 @@
+.button{
+	font-size: 14px;
+	font-weight: $bold;
+	color: $white;
+	background: $green;
+	padding: 12px 20px;
+	text-decoration: none;
+	border: 1px solid $green-dark;
+	border-bottom: 3px solid $green-dark;
+	@include border-radius(4px);
+	@include transition(0.2s);
+
+	position: absolute;
+	top: 209px;
+	left: 783px;
+
+	&:hover{
+		background: darken($green, 10%);
+	}
+
+	&.button-grey{
+		background: $muted;
+		border: 1px solid $muted-dark;
+		border-bottom: 3px solid $muted-dark;
+		&:hover{
+			background: darken($muted, 10%);
+		}
+	}
+}
