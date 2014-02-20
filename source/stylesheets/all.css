@@ -64,10 +64,14 @@ body {
   position: absolute;
   left: 937px;
   top: 20px;
-  z-index: 501; }
+  z-index: 501;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .slide_out {
-  left: 200px !important; }
+  left: 50% !important;
+  margin-left: -402px; }
 
 .modal-tarp {
   background: rgba(0, 0, 0, 0.6);
@@ -80,10 +84,39 @@ body {
   z-index: 500; }
 
 .code {
-  color: white;
   position: absolute;
-  left: 153px;
-  top: 500px; }
+  left: 153px !important;
+  top: inherit !important;
+  bottom: 50px; }
+
+.minimize {
+  background: url("/img/minimize.png");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
+  opacity: .25;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  position: absolute;
+  top: 20px;
+  left: 100px; }
+  .minimize:after {
+    content: "";
+    background: url("/img/exit.png");
+    background-repeat: no-repeat;
+    width: 108px;
+    height: 28px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    position: absolute;
+    left: 36px;
+    display: none; }
+  .minimize:hover {
+    opacity: 1; }
+    .minimize:hover:after {
+      display: inline !important; }
 
 body {
   font-family: "helvetica", arial, sans-serif; }
@@ -108,6 +141,9 @@ h2 {
   text-decoration: none;
   border: 1px solid #3ac162;
   border-bottom: 3px solid #3ac162;
+  -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  -moz-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -119,10 +155,16 @@ h2 {
   top: 209px;
   left: 783px; }
   .button:hover {
-    background: #3ac162; }
+    background: #3ac162;
+    border: 1px solid #34ad58;
+    border-bottom: 3px solid #34ad58; }
   .button.button-grey {
     background: #83868a;
     border: 1px solid #606366;
     border-bottom: 3px solid #606366; }
     .button.button-grey:hover {
-      background: #6a6d70; }
+      background: #6a6d70;
+      border: 1px solid #545659;
+      border-bottom: 3px solid #545659; }
+  .button.button-task2 {
+    top: 274px !important; }

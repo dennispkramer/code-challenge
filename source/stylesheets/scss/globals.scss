@@ -30,6 +30,12 @@ $bold: 600;
         	transition: all $transition;
 }
 
+@mixin text-shadow($text-shadow) {
+	-webkit-text-shadow: $text-shadow;
+   	 -moz-text-shadow: $text-shadow;
+        	text-shadow: $text-shadow;
+}
+
 // Convert px to ems
 $browser-context: 16; // Default
 

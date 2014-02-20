@@ -7,6 +7,7 @@
 	text-decoration: none;
 	border: 1px solid $green-dark;
 	border-bottom: 3px solid $green-dark;
+	@include text-shadow(0 1px 0 rgba(0,0,0,.4));
 	@include border-radius(4px);
 	@include transition(0.2s);
 
@@ -16,6 +17,8 @@
 
 	&:hover{
 		background: darken($green, 10%);
+		border: 1px solid darken($green-dark, 5%);
+		border-bottom: 3px solid darken($green-dark, 5%);
 	}
 
 	&.button-grey{
@@ -24,6 +27,11 @@
 		border-bottom: 3px solid $muted-dark;
 		&:hover{
 			background: darken($muted, 10%);
+			border: 1px solid darken($muted-dark, 5%);
+			border-bottom: 3px solid darken($muted-dark, 5%);
 		}
+	}
+	&.button-task2{
+		top: 274px !important;
 	}
 }

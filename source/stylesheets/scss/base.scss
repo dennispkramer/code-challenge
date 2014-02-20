@@ -19,10 +19,12 @@ body{
 	left: 937px;
 	top: 20px;
 	z-index:501;
+	@include transition(0.2s);
 }
 
 .slide_out{
-	left: 200px !important;
+	left: 50% !important;
+	margin-left: -402px;
 }
 
 .modal-tarp{
@@ -37,8 +39,41 @@ body{
 }
 
 .code{
-	color: $white;
 	position: absolute;
-	left: 153px;
-	top: 500px;
+	left: 153px !important;
+	top: inherit !important;
+	bottom: 50px;
+}
+
+.minimize{
+	background: url("/img/minimize.png");
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+	opacity: .25;
+	@include transition(0.2s);
+
+	position: absolute;
+	top: 20px;
+	left: 100px;
+
+	&:after{
+		content: "";
+		background: url("/img/exit.png");
+		background-repeat: no-repeat;
+		width: 108px;
+		height: 28px;
+		@include transition(0.2s);
+
+		position: absolute;
+		left: 36px;
+		display: none;
+	}
+
+	&:hover{
+		opacity: 1;
+		&:after{
+			display: inline !important;
+		}
+	}
 }

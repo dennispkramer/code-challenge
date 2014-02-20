@@ -1,4 +1,3 @@
-//= require jquery
 $(document).ready(function(){
   $("#preview_2").click(function(){
     $(".modal-tarp").toggleClass("hide animated fadeIn",function(){
