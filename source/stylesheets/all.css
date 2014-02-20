@@ -58,7 +58,7 @@ body {
 .preview_1 {
   position: absolute;
   left: 100px;
-  top: 300px; }
+  top: 275px; }
 
 #preview_2 {
   position: absolute;
@@ -99,8 +99,8 @@ body {
   -moz-transition: all 0.2s;
   transition: all 0.2s;
   position: absolute;
-  top: 20px;
-  left: 100px; }
+  top: 30px;
+  left: 879px; }
   .minimize:after {
     content: "";
     background: url("/img/exit.png");
@@ -111,11 +111,40 @@ body {
     -moz-transition: all 0.2s;
     transition: all 0.2s;
     position: absolute;
-    left: 36px;
+    left: -120px;
     display: none; }
   .minimize:hover {
     opacity: 1; }
     .minimize:hover:after {
+      display: inline !important; }
+
+.maximize {
+  background: url("/img/maximize.png");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
+  opacity: .25;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  position: absolute;
+  top: 89px;
+  left: 898px; }
+  .maximize:after {
+    content: "";
+    background: url("/img/enter.png");
+    background-repeat: no-repeat;
+    width: 118px;
+    height: 28px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    position: absolute;
+    left: -130px;
+    display: none; }
+  .maximize:hover {
+    opacity: 1; }
+    .maximize:hover:after {
       display: inline !important; }
 
 body {
@@ -152,7 +181,7 @@ h2 {
   -moz-transition: all 0.2s;
   transition: all 0.2s;
   position: absolute;
-  top: 209px;
+  top: 184px;
   left: 783px; }
   .button:hover {
     background: #3ac162;
@@ -167,4 +196,4 @@ h2 {
       border: 1px solid #545659;
       border-bottom: 3px solid #545659; }
   .button.button-task2 {
-    top: 274px !important; }
+    top: 249px !important; }
