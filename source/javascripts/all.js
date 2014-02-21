@@ -7,4 +7,13 @@ $(document).ready(function(){
       $(this).remove();
     });
   });
+
+  $(".modal-tarp").click(function(){
+    $(".modal-tarp").toggleClass("hide animated fadeIn",function(){
+      $(this).remove();
+    });
+    $("#preview_2").toggleClass("slide_out", function(){
+      $(this).remove();
+    });
+  });
 });
